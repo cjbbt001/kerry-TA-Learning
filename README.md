@@ -1,6 +1,6 @@
 # Kerry TA Learning
 
-基于 Unity Built-in Render Pipeline 的 Technical Art 学习仓库，资产统一放在根目录 `Assets/` 下。内容按学习顺序从易到难排列：
+这是 Kerry 的 TA 入门教程学习记录。基于 Unity Built-in Render Pipeline 的 Technical Art 学习仓库，资产统一放在根目录 `Assets/` 下。内容按学习顺序从易到难排列：
 
 | 顺序 | 目录 | 内容 |
 | --- | --- | --- |

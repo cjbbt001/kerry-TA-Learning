@@ -1,6 +1,15 @@
 # Kerry TA Learning
 
-基于 Unity Built-in Render Pipeline 的 Technical Art 学习项目，集中记录三个实时渲染练习：自定义 Blinn-Phong 光照、环境映射与玉石材质、轻量级角色渲染。项目主要使用 ShaderLab / HLSL，从基础直接光照逐步扩展到法线映射、多光源、IBL、球谐环境光、皮肤近似和各向异性头发高光。
+基于 Unity Built-in Render Pipeline 的 Technical Art 学习仓库，包含两部分内容：
+
+| 目录 | 内容 |
+| --- | --- |
+| 仓库根目录（`Assets/`） | Kerry TA 练习：自定义 Blinn-Phong 光照、环境映射与玉石材质、轻量级角色渲染 |
+| `Unity_shader入门/` | ShaderLab/CG 基础：纹理采样、极坐标 UV、溶解、透明混合、Fresnel 边缘光 |
+| `ASE入门/` | Amplify Shader Editor 练习：扫光与边缘光、MatCap 与薄膜干涉、顶点生长、Stencil |
+| `images/` | Shader 入门部分的效果截图 |
+
+根目录项目主要使用 ShaderLab / HLSL，从基础直接光照逐步扩展到法线映射、多光源、IBL、球谐环境光、皮肤近似和各向异性头发高光。
 
 ## Mobile Character Rendering
 
@@ -129,10 +138,33 @@ Tone Mapping、Gamma Correction 与 ACES 由后处理或渲染管线负责，不
 
 > 玉石效果是实时视觉近似，并非物理精确的次表面散射。
 
+## Shader 入门
+
+手写 Shader 与 Amplify Shader Editor（ASE）节点实现，用于记录从渲染管线基础到常见材质效果的学习过程。
+
+### 扫光与边缘光
+
+![扫光与边缘光效果](images/scan.png)
+
+### MatCap 与薄膜效果
+
+| | |
+| --- | --- |
+| ![MatCap 角色效果](images/matcap%20%281%29.png) | ![MatCap 甲虫效果](images/matcap%20%282%29.png) |
+| ![MatCap 正面效果](images/matcap%20%283%29.png) | |
+
+### 使用方式
+
+1. 使用 Unity Hub 分别打开根目录、`Unity_shader入门/` 或 `ASE入门/`。
+2. 以上项目均使用 Built-in Render Pipeline。
+3. `ASE入门` 不包含 Amplify Shader Editor 插件，需要从 Unity Asset Store 自行导入。
+
 ## 项目环境
 
-- Unity `6000.3.16f1`
+- Unity `6000.3.16f1`（根目录 Kerry TA 项目）/ `6000.3.17f1`（Shader 入门项目）
 - Built-in Render Pipeline
 - Post Processing `3.5.4`
 - ShaderLab / HLSL
 - Git LFS
+
+> 本仓库用于个人学习与效果验证，场景和参数会随学习进度持续调整。

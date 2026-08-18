@@ -1,15 +1,15 @@
 # Kerry TA Learning
 
-基于 Unity Built-in Render Pipeline 的 Technical Art 学习仓库，包含两部分内容：
+基于 Unity Built-in Render Pipeline 的 Technical Art 学习仓库，资产统一放在根目录 `Assets/` 下：
 
 | 目录 | 内容 |
 | --- | --- |
-| 仓库根目录（`Assets/`） | Kerry TA 练习：自定义 Blinn-Phong 光照、环境映射与玉石材质、轻量级角色渲染 |
-| `Unity_shader入门/` | ShaderLab/CG 基础：纹理采样、极坐标 UV、溶解、透明混合、Fresnel 边缘光 |
-| `ASE入门/` | Amplify Shader Editor 练习：扫光与边缘光、MatCap 与薄膜干涉、顶点生长、Stencil |
+| `Assets/MobileCharacterRendering` 等 | Kerry TA 练习：自定义 Blinn-Phong 光照、环境映射与玉石材质、轻量级角色渲染 |
+| `Assets/Unity_shader入门/` | ShaderLab/CG 基础：纹理采样、极坐标 UV、溶解、透明混合、Fresnel 边缘光 |
+| `Assets/ASE入门/` | Amplify Shader Editor 练习：扫光与边缘光、MatCap 与薄膜干涉、顶点生长、Stencil |
 | `images/` | Shader 入门部分的效果截图 |
 
-根目录项目主要使用 ShaderLab / HLSL，从基础直接光照逐步扩展到法线映射、多光源、IBL、球谐环境光、皮肤近似和各向异性头发高光。
+项目主要使用 ShaderLab / HLSL，从基础直接光照逐步扩展到法线映射、多光源、IBL、球谐环境光、皮肤近似和各向异性头发高光。
 
 ## Mobile Character Rendering
 
@@ -155,13 +155,14 @@ Tone Mapping、Gamma Correction 与 ACES 由后处理或渲染管线负责，不
 
 ### 使用方式
 
-1. 使用 Unity Hub 分别打开根目录、`Unity_shader入门/` 或 `ASE入门/`。
-2. 以上项目均使用 Built-in Render Pipeline。
-3. `ASE入门` 不包含 Amplify Shader Editor 插件，需要从 Unity Asset Store 自行导入。
+1. 使用 Unity Hub 打开本仓库根目录。
+2. 在 `Assets/Unity_shader入门/` 与 `Assets/ASE入门/` 中查看对应练习资产。
+3. 工程使用 Built-in Render Pipeline。
+4. `Assets/ASE入门` 不包含 Amplify Shader Editor 插件，需要从 Unity Asset Store 自行导入。
 
 ## 项目环境
 
-- Unity `6000.3.16f1`（根目录 Kerry TA 项目）/ `6000.3.17f1`（Shader 入门项目）
+- Unity `6000.3.16f1`
 - Built-in Render Pipeline
 - Post Processing `3.5.4`
 - ShaderLab / HLSL
